@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>修理工房</title>
+        <meta name="description" content="表示できません">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"> <!--ブラウザ付属のデフォルトのスタイルを打ち消す(リセット)CSS-->
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js" defer></script>
+    </head>
+
+    <body>
+        <header id="header">    <!--ヘッダー-->
+            <h1 class="site-title"><a href="index.html"><img src="img/Repairlogo.svg" alt="画像が表示できません"></a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#repair">修理実績</a></li>
+                    <li><a href="#image">修理イメージ</a></li>
+                    <li><a href="#contact">お問い合わせ</a></li>
+                    <li><a href="#access">アクセス</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--ダークモードボタン設定-->
+        <div class="Dark">
+            <button id="btn">ダークモード</button>
+        </div>
+
+        <!--お知らせ欄(動きあり)-->
+        <h2 class="sec-title">お知らせ</h2>
+        <div id="wrapper">
+            <div id="ticKer">
+                <ul id="ulArea">
+                    <li>取り扱いメーカーについて</li>
+                    <li>送料について</li>
+                    <li>料金改定しました</li>
+                    <li>お休みについて</li>
+                    <li>その他</li>
+                </ul>
+            </div>
+        </div>
+        
+        <main>
+            <!--メインビジュアル-->
+            <div id="mainvisual">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="img/main-2ds.jpg">
+                    <img src="img/main-64-pc.jpg" alt="画像が表示できません">
+                </picture>
+            </div>
+
+            <!--担当者ボタンロゴ-->
+            <div class="blank">
+            <a href="#"><h2 class="in-charge">担当者はどんな人？(まだメンテ中です！)</h2></a>
+            </div>
+
+            <!--修理実績セクション-->
+            <section id ="repair" class="wrapper">
+                <h2 class="sec-title">修理実績</h2>
+                <ul>
+                    <li><img src="img/repair-1.jpg" alt="画像が表示できません">
+                    <h3 class="content-title">3DSステックの交換</h3>
+                    <p>3DSゴム外れにより3Dステックごと<br>
+                            交換修理を行いました</p>
+                    </li>
+
+                    <li><img src="img/repair-2.jpg" alt="画像が表示できません">
+                    <h3 class="content-title">3DSのRボタン交換</h3>
+                    <p>3DSのRボタンの効きが悪く<br>
+                            ボタンごと交換を行いました</p>
+                    </li>
+                    <li><img src="img/repair-3.jpg" alt="画像が表示できません">
+                     <h3 class="content-title">Switchステック交換</h3>
+                    <p>Switchステックの不具合により<br>
+                            ステックごと交換を行いました</p>
+                    </li>
+                </ul>
+            </section>
+
+            <!--修理イメージセクション-->
+            <section id="image" class="wrapper">
+                <h2 class="sec-title">修理イメージ</h2>
+                <ul>
+                    <li><img src="img/image-1.jpg" alt="画像が表示できません">
+                        <h3 class="content-title">PS3のコントローラー</h3>
+                            <p>操作が効かなくなる症状が発生し<br>
+                                分解してティッシュを挟む段階です</p>
+                        </li>
+    
+                        <li><img src="img/image-2.jpg" alt="画像が表示できません">
+                        <h3 class="content-title">GBCのバックライト搭載</h3>
+                        <p>GBCをバックライト付きの液晶に<br>
+                                交換し、動作チェックを<br>
+                                行っております</p>
+                        </li>
+                        <li><img src="img/image-3.jpg" alt="画像が表示できません">
+                         <h3 class="content-title">64コントローラーステック補強</h3>
+                        <p>ステック内部の摩耗により<br>
+                            操作感が無くなったとの事で<br>
+                                底にエポキシパテを塗り込み<br>
+                                補強している段階です</p>
+                        </li>
+                </ul>
+            </section>
+
+            <!--お問い合わせセクション-->
+            <section id="contact" class="wrapper">
+                <h2 class="sec-title">お問い合わせ</h2>
+                <form action="#" method="post">
+                    <dl>
+                        <dt><label for="name">名前</label></dt> <!--ラベルをdtタグで囲む-->
+                        <dd><input type="text" id="name" name="your-name"></dd> <!--入力フォームをddタグで囲む-->
+
+                        <dt><label for="e-mail">メール</label></dt>
+                        <dd><input type="email" id="email" name="your-email"></dd>
+                        
+                        <dt><label for="name">メッセージ</label></dt>
+                        <dd><textarea id="message" name="your-message"></textarea></dd>
+                    </dl>
+                    <div class="button"><input type="submit" value="送信"></div>
+                    </dl>
+                </form>
+            </section>
+
+            <!--アクセスセクション-->
+            <section id="access" class="wrapper">
+                <h2 class="sec-title">アクセス</h2>
+            </section>
+            <aside class="location">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.775766575761!2d135.57576019381517!3d34.71083525425868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e04887e1384d%3A0x3f52690c59d14beb!2z6Iqx5Y2a6KiY5b-15YWs5ZySIOm2tOimi-e3keWcsA!5e0!3m2!1sja!2sjp!4v1724293077353!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </aside>
+        </main>
+
+        <!--フッター-->
+        <footer id="footer">
+            <p>&copy; 2020 Repair</p>
+        </footer>
+
+    </body>
+</html>
